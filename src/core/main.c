@@ -80,7 +80,6 @@ __attribute__((__used__)) int main() {
 
   // setup filters early
   filter_global_init();
-  timer_alloc_init();
   pid_init();
 
   // init some hardware things
@@ -126,7 +125,7 @@ __attribute__((__used__)) int main() {
 
   rx_init();
   vtx_init();
-  rgb_init();
+  rgb_led_init();
 
   blackbox_init();
   imu_init();

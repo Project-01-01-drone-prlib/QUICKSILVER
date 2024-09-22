@@ -428,7 +428,7 @@ const profile_t default_profile = {
             AUX_CHANNEL_OFF, // AUX_BLACKBOX
             PREARM,          // AUX_PREARM
         },
-        .lqi_source = RX_LQI_SOURCE_PACKET_RATE,
+        .lqi_source = RX_LQI_SOURCE_DIRECT,
         .channel_mapping = RX_MAPPING_AETR,
         .stick_calibration_limits = {
             {.min = -1, .max = 1}, // axis[0]

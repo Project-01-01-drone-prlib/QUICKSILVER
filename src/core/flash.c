@@ -130,8 +130,11 @@ void flash_save() {
   __enable_irq();
 }
 
+static flash_word_t temp_test_flash = 0;
+
 void flash_load() {
 
+  temp_test_flash = fmc_read(TARGET_STORAGE_OFFSET);
   if (fmc_read(TARGET_STORAGE_OFFSET) == (FMC_MAGIC | TARGET_STORAGE_OFFSET)) {
     const uint32_t offset = TARGET_STORAGE_OFFSET + FMC_MAGIC_SIZE;
     const uint32_t size = TARGET_STORAGE_SIZE - FMC_MAGIC_SIZE;

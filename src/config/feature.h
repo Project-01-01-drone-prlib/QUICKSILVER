@@ -7,14 +7,14 @@
 #define USE_GYRO
 #define USE_SOFT_SERIAL
 #define USE_SDCARD
-#define USE_DATA_FLASH
+// #define USE_DATA_FLASH
 
 #define USE_VTX
 #define USE_DIGITAL_VTX
-#define USE_MAX7456
+// #define USE_MAX7456
 
 #define USE_MOTOR_DSHOT
-#define USE_MOTOR_PWM
+// #define USE_MOTOR_PWM
 
 #define USE_RX_UNIFIED
 
